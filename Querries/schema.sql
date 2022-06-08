@@ -42,7 +42,7 @@ CREATE TABLE dept_emp (
     FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
     PRIMARY KEY (emp_no, dept_no)
 );
-SELECT * FROM dept_emp
+
 CREATE TABLE titles(
 	emp_no INT NOT NULL,
 	title VARCHAR NOT NULL,
@@ -52,4 +52,3 @@ CREATE TABLE titles(
 	PRIMARY KEY (emp_no, title, from_date)
 	
 );
-SELECT * FROM departments;
