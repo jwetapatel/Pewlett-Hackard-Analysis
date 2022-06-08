@@ -13,14 +13,19 @@ INNER JOIN titles as ti
 ON (e.emp_no = ti.emp_no)
 	WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
+SELECT * FROM retirement_titles
 
 -- The Number of Retiring Employees by Title (No Duplicates).
+
 SELECT DISTINCT ON (rt.emp_no) 
 	rt.emp_no,
 	rt.first_name,
 	rt.last_name,
 	rt.title
 INTO unique_titles
+FROM retirement_titles as rt
+ORDER BY rt.emp_no, rt.to_date DESC;
+SELECT * FROM unique_titles
 
 -- The number of employees by their most recent job title who are about to retire.
 
