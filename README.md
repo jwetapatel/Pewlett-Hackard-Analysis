@@ -44,6 +44,7 @@ Quick DBD
 
 ![unique titles](https://user-images.githubusercontent.com/96400887/172652364-6229c939-9685-44ee-94b8-7d18c920043d.png)
 
+
 3. The number of retiring employees grouped by title
 
 - The table includes employees’ titles and their sum.
@@ -51,6 +52,13 @@ Quick DBD
 - From this table we can quickly see how many employees with certain title will retire in the next few years.
 
 ![retiering titles](https://user-images.githubusercontent.com/96400887/172652643-d7970f17-ff97-41ea-a015-158e99df4075.png)
+
+
+# Summary
+
+As the company is preparing for the upcoming "silver tsunami" a good planning is essential, especially when such a large number of the employees is involved. Reports above give a good insight about the number of the employees that are about to retire and hold specific title. However, I believe that additional break down per department will be beneficial for the company. In this case headquarters can see what to expect in each department separately. In order to retrieve department name information, I merged additional table departments into existing table retirement_titles with the inner join. After removing the duplicates, with DISTINCT ON command, the table was ready to be used for additional queries.
+
+![Extra_TitlesAndDepartment](https://user-images.githubusercontent.com/96400887/172720655-37022a79-d085-4c6e-a42b-78a87f85ac86.png)
 
 
 
