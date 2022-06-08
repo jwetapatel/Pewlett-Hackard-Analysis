@@ -53,12 +53,31 @@ Quick DBD
 
 ![retiering titles](https://user-images.githubusercontent.com/96400887/172652643-d7970f17-ff97-41ea-a015-158e99df4075.png)
 
+4. The employees eligible for the mentorship program
+
+- The table contains employee number, first name, last name, birth date, from date, to date and title.
+- The query returns 1,549 rows.
+- The table displays a list of employees who is eligible for the mentorship program.
+
+![Menthorship](https://user-images.githubusercontent.com/96400887/172721968-4bbcd886-aac1-407a-aa91-0fcefdc45013.png)
+
 
 # Summary
 
-As the company is preparing for the upcoming "silver tsunami" a good planning is essential, especially when such a large number of the employees is involved. Reports above give a good insight about the number of the employees that are about to retire and hold specific title. However, I believe that additional break down per department will be beneficial for the company. In this case headquarters can see what to expect in each department separately. In order to retrieve department name information, I merged additional table departments into existing table retirement_titles with the inner join. After removing the duplicates, with DISTINCT ON command, the table was ready to be used for additional queries.
+- As the company is preparing for the upcoming "silver tsunami" a good planning is essential, especially when such a large number of the employees is involved. Reports above give a good insight about the number of the employees that are about to retire and hold specific title. However, I believe that additional break down per department will be beneficial for the company. In this case headquarters can see what to expect in each department separately. In order to retrieve department name information, I merged additional table departments into existing table retirement_titles with the inner join. After removing the duplicates, with DISTINCT ON command, the table was ready to be used for additional queries.
+-  Table with retirement-ready employee’s data with added department name
 
 ![Extra_TitlesAndDepartment](https://user-images.githubusercontent.com/96400887/172720655-37022a79-d085-4c6e-a42b-78a87f85ac86.png)
+
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+The table retirement titles contains all the information about the employees that are about to retire in the next four years. To get the number of positions that will be open in next four years I ran additional query that breaks down how many staff will retire per department. Since every department will be affected in some way this query gives more precise numbers what each department can expect and how many roles will need to be filled.
+- Sum of retirement-ready employees group by title and department.
+
+![Extra_RolesToFill](https://user-images.githubusercontent.com/96400887/172721012-02569295-1cae-4312-b0c2-0bb8ce213f79.png)
+
+
+
+
 
 
 
