@@ -2,8 +2,6 @@
 
 # Project Overview
 
-### Purpose
-
 The purpose of this analysis is to prepare Pewlett-Hackard, a company with several thousand employees, for the upcoming “silver tsunami”. A large number of employees will begin retiring at a rapid rate in the next few years and the company wants to be prepared with the retirement packages, open positions and employees’ training. In order to ensure a smooth transition this analysis focuses on the following:
 
 1. Identify the retiring employees by their title.
